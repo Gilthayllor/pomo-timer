@@ -1,5 +1,7 @@
 import { Container } from './components/Container';
 import { Countdown } from './components/Countdown';
+import { Cycles } from './components/Cycles';
+import { DefaultInput } from './components/DefaultInput';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import './styles/global.css';
@@ -20,8 +22,12 @@ function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='meuInput'>task</label>
-            <input id='meuInput' type='text' />
+            <DefaultInput
+              id='meuInput'
+              type='text'
+              label='Task'
+              placeholder='Task...'
+            />
           </div>
 
           <div className='formRow'>
@@ -29,8 +35,7 @@ function App() {
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>0 0 0 0 0 0 0</p>
+            <Cycles />
           </div>
 
           <div className='formRow'>
