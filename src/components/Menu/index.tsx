@@ -1,7 +1,7 @@
 import { LuHistory, LuHouse, LuSettings, LuSun } from 'react-icons/lu';
 import styles from './styles.module.css';
 
-export function Menu() {
+export const Menu: React.FC = () => {
   return (
     <nav className={styles.menu}>
       <a className={styles.menuLink} href='#'>
@@ -21,4 +21,4 @@ export function Menu() {
       </a>
     </nav>
   );
-}
+};

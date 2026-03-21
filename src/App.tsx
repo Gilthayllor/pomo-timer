@@ -1,7 +1,10 @@
+import { LuCirclePlay } from 'react-icons/lu';
 import { Container } from './components/Container';
 import { Countdown } from './components/Countdown';
 import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
 import { DefaultInput } from './components/DefaultInput';
+import { Footer } from './components/Footer';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import './styles/global.css';
@@ -39,9 +42,13 @@ function App() {
           </div>
 
           <div className='formRow'>
-            <button>Enviar</button>
+            <DefaultButton icon={<LuCirclePlay />} />
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer />
       </Container>
     </>
   );

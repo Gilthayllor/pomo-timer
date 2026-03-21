@@ -1,7 +1,7 @@
 import { LuTimer } from 'react-icons/lu';
 import styles from './styles.module.css';
 
-export function Logo() {
+export const Logo: React.FC = () => {
   return (
     <div className={styles.logo}>
       <a className={styles.logoLink} href='#'>
@@ -10,4 +10,4 @@ export function Logo() {
       </a>
     </div>
   );
-}
+};
