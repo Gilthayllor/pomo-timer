@@ -1,5 +1,15 @@
 import styles from './styles.module.css';
 
-export const Countdown: React.FC = () => {
-  return <div className={styles.container}>00:00</div>;
+interface CountdownProps {
+  formatterdSecondsRemaining?: string;
+}
+
+export const Countdown: React.FC<CountdownProps> = ({
+  formatterdSecondsRemaining,
+}) => {
+  return (
+    <div className={styles.container}>
+      {formatterdSecondsRemaining || '00:00'}
+    </div>
+  );
 };
