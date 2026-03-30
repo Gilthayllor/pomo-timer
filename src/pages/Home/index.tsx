@@ -7,7 +7,7 @@ export const Home: React.FC = () => {
   return (
     <MainTemplate>
       <Container>
-        <Countdown formatterdSecondsRemaining='23:56' />
+        <Countdown />
       </Container>
       <Container>
         <MainForm />

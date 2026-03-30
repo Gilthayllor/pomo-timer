@@ -7,9 +7,9 @@ export interface TaskStateModel {
   activeTask: TaskModel | null;
   currentCycle: number;
   config: {
-    work: number;
-    shortBreak: number;
-    longBreak: number;
+    workTime: number;
+    shortBreakTime: number;
+    longBreakTime: number;
     cyclesBeforeLongBreak: number;
   };
 }
